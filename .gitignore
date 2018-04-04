@@ -1,3 +1,6 @@
 .ipynb_checkpoints/*
 metastore_db/*
 derby.log
+corrected.gz
+kddcup.data.gz
+kddcup.data_10_percent.csv
