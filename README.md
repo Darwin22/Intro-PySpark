@@ -7,7 +7,7 @@ L'objectifs de ces tutoriels sous forme de calepins ([*jupyter notebooks*](http:
 **Remarques importantes**: si les données ne sont pas *grosses* à devoir être *distribuées*, un usage classique de Python voire R s'avère plus efficace pour une *phase d'apprentissage*. En revanche, la phase de préparation des données (*data munging*), en flux ou pas, gagne à être opérée dans un environnement distribué (cf. [Besse et al. 2016](https://hal.archives-ouvertes.fr/hal-01350099)). D'où l'importance pour le statisticien à se former à ces technologies.
 
 
-## Tutoriels d'nitiation à <a href="http://spark.apache.org/"><img src="http://spark.apache.org/images/spark-logo-trademark.png" style="max-width: 80px; display: inline" alt="Spark"/> </a>  avec [`PySpark`](http://spark.apache.org/docs/latest/api/python/)
+## Tutoriels d'initiation à Spark  avec [`PySpark`](http://spark.apache.org/docs/latest/api/python/)
 L'objectif de ces tutoriels est d'introduire les objets de la technologie [Spark](https://spark.apache.org/) et leur utilisation à l'aide de commandes en Python, plus précisément en utilisant l'API  [`PySpark`](http://spark.apache.org/docs/latest/api/python/). 
 
 - [`Cal1-PySpark-munging`](https://github.com/wikistat/Ateliers-Big-Data/blob/master/Intro-PySpark/Cal1-PySpark-munging.ipynb) justifie l'utilisation de cet environnement qui distribue automatiquement les données sur un cluster et parallélise les tâches; description des principaux types de données et des concepts de *Resilient Distributed Datasets* (RDD) et *DataFrame*.
@@ -18,7 +18,7 @@ L'objectif de ces tutoriels est d'introduire les objets de la technologie [Spark
 
 
 
-## De [Hadoop](http://hadoop.apache.org/) à <a href="http://spark.apache.org/"><img src="http://spark.apache.org/images/spark-logo-trademark.png" style="max-width: 80px; display: inline" alt="Spark"/> </a> 
+## De [Hadoop](http://hadoop.apache.org/) à Spark
 
 ### Introduction à [Hadoop](http://hadoop.apache.org/)
 
@@ -33,7 +33,7 @@ d’ordinateurs, le résultat est un ensemble de couples : une clef (le mot, l�
 Dans cette architecture, les algorithmes sont dits *échelonnables* de l’anglais **scalable** si  le  temps  d’exécution  décroît  linéairement  avec  le  nombre  d’exécuteurs dédiés au calcul. C’est immédiat pour des dénombrements, des calculs de
 moyennes, ce n’est pas nécessairement le cas pour des algorithmes itératifs complexes. 
 
-### Pourquoi <a href="http://spark.apache.org/"><img src="http://spark.apache.org/images/spark-logo-trademark.png" style="max-width: 80px; display: inline" alt="Spark"/> </a>?
+### Pourquoi Spark?
 Les algorihtmes de certains méthodes s'adaptent facilement aux contraintes de *MapReduce* d'autres pas et cela opère une *sélection naturelle* des méthodes qui passent facilement à l'échelle volume. Anisi, la méthode des *k-plus proches voisins* n’est pas échelonnable au contraire des algorithmes de classification non-supervisée par réallocation dynamique (e.g.Forgy, *k-means*) qui peuvent opérer par itérations d’étapes *MapReduce*.
 
 Mais, même *scalable* ou *échelonnable*, les méthodes itératives soulèvent d'autres problèmes. L’exemple de l’algorithme de Forgy (1965) est très révélateur.
@@ -55,7 +55,7 @@ C'est une des principales motivations la mise en place de la technologie **Spark
 Cette couche logicielle au-dessus de systèmes de gestion de fichiers comme Hadoop introduit la notion de **base de données résiliente** (*resilient distributed dataset* ou **RDD**) dont chaque partition reste, si nécessaire, présente en mémoire entre deux itérations pour éviter réécriture et relecture. Cela répond bien aux principales contraintes: *des données massives ne doivent pas être déplacées* et un résultat doit être obtenu par *une seule opération de lecture sur disque*.
 
 
-### Introduction à <a href="http://spark.apache.org/"><img src="http://spark.apache.org/images/spark-logo-trademark.png" style="max-width: 80px; display: inline" alt="Spark"/> </a> 
+### Introduction à Spark
 
 Techniquement, *Spark* manipule des **RDDs** (*resilient distributed datasets*) par des commandes en langage Java ou Scala mais il existe des API (*application programming interface*) acceptant des commandes en Python ([`PySpark`](http://spark.apache.org/docs/latest/api/python/)) et en  R. *Spark* intègre  beaucoup  de fonctionnalités réparties en quatre modules:
 
