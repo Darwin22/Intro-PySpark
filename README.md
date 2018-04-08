@@ -1,6 +1,6 @@
 ###<a href="http://www.insa-toulouse.fr/" ><img src="http://www.math.univ-toulouse.fr/~besse/Wikistat/Images/Logo_INSAvilletoulouse-RVB.png" style="float:left; max-width: 80px; display: inline" alt="INSA"/> |  [*Mathématiques Appliquées*](http://www.math.insa-toulouse.fr/fr/index.html), [`Science des Données`](http://www.math.insa-toulouse.fr/fr/enseignement.html) 
 
-# <a href="http://spark.apache.org/"><img src="http://spark.apache.org/images/spark-logo-trademark.png" style="max-width: 100px; display: inline" alt="Spark"/> </a> [pour Statistique et *Science des* grosses *Données*](https://github.com/wikistat/Intro-Python)
+# <a href="http://spark.apache.org/"><img src="https://www.versive.com/user/pages/01.home/_results/spark.svg?g-7518fe06" style="max-width: 100px; display: inline" alt="Spark"/> </a> [pour Statistique et *Science des* grosses *Données*](https://github.com/wikistat/Intro-Python)
 
 L'objectifs de ces tutoriels sous forme de calepins ([*jupyter notebooks*](http://jupyter.org/)) est d'introduire **Spark** comme outil privilégié pour *passage à l'échelle Volume* des méthodes d'apprentissage; processus qui transforme un statisticien en *Data Scientist*.
 
